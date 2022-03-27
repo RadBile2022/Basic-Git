@@ -51,3 +51,4 @@
 26. pull request => meminta request merge ke branch yang dituju di remote repo
 27. merge conflict => kondisi dimana kedua branch yang ingin di merge, ada kesamaan baris yang di ubah/berbeda, maka kita wajib memilih baris mana yang akan di gunakan
 28. fork => melakukan duplikasi ke tempat kita, biasanya digunakan ketika ingin berkontribusi kepada project open source, dimana kita tidak punya akses langsung ke git repo nya, Semua perubahan nanti dilakukan di git repository profile kita Dan setelah selesai, kita bisa melakukan pull request ke repository sumber forking kita
+29. code . => membuka ide code 
