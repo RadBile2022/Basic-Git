@@ -14,13 +14,14 @@
 6. git add . => memindahkan seluruh file di working area ke stagging index (jika 1 file saja ganti . dengan nama filenya)
 7. git commit -m "pesan commit" => memindahkan seluruh file di stagging ke repository
 8. git diff => melihat perubahan file nya
-9. git restore --staged namafile => memindahkan file dari workflow staging ke working 
-10. git log => melihat history commit
-11. alias graph="git log --all --oneline --decorate --graph" => melihat history commit dengan graphic network
-12. git branch => melihat semua branch
-13. git branch --show-current => melihat branch saat ini
-14. git checkout namabranch => pindah branch
-15. git checkout hash7nomer => pindah ke suatu commit dengan 7nomer hash
+9. git restore --staged namafile => memindahkan file dari staging area ke working 
+10. git restore namafile => membatalkan perubahan di working area, jika file sudah di stagging area wajib di pindahkan ke working area baru bisa
+11. git log => melihat history commit
+12. alias graph="git log --all --oneline --decorate --graph" => melihat history commit dengan graphic network
+13. git branch => melihat semua branch
+14. git branch --show-current => melihat branch saat ini
+15. git checkout namabranch => pindah branch
+16. git checkout hash7nomer => pindah ke suatu commit dengan 7nomer hash
 
 * .ignore
   * untuk file yang tidak akan ter track di git
