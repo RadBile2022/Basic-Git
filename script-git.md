@@ -14,3 +14,39 @@
 6. git add . => memindahkan seluruh file di working area ke stagging index (jika 1 file saja ganti . dengan nama filenya)
 7. git commit -m "pesan commit" => memindahkan seluruh file di stagging ke repository
 8. git diff => melihat perubahan file nya
+9. git restore --staged namafile => memindahkan file dari workflow staging ke working 
+10. git log => melihat history commit
+11. alias graph="git log --all --oneline --decorate --graph" => melihat history commit dengan graphic network
+12. git branch => melihat semua branch
+13. git branch --show-current => melihat branch saat ini
+14. git checkout namabranch => pindah branch
+15. git checkout hash7nomer => pindah ke suatu commit dengan 7nomer hash
+
+* .ignore
+  * untuk file yang tidak akan ter track di git
+  * bisa kunjungin web ignore.io untuk melihat file yang di recommended tidak di track
+
+15. git branch -m namabranchbaru => mengubah nama branch (harus di posisi branch yang ingin di rename)
+16. git branch -d namabranch => menghapus branch (jangan di posisi branch yang ingin di hapus)
+17. git merge namabranch => menggabungkan branch 
+    * ada 2 jenis merge
+      * fast forward => harus berada dalam jalur langsung / direct path
+      * three-way merge / merge commit => membuat commit baru ketika di merge karena tidak dalam jalur langsung
+18. git rebase namabrach => rebase merge, merge dengan cara yang rapih
+19. git merge --squash namabranch => menggabungkan beberapa commit menjadi 1 commit
+
+* git remote
+  * git remote add origin urlnya => menambah remote repository
+  * git remote => untuk melihat remote repository
+  * git remote -v => untuk melihat detail remote repo
+  * git remote rm namaremote => menghapus remote repo
+
+20. git push Nremote Nbranch => mengirim perubahan dari local(git) ke server(github)
+21. git push Nremote --delete Nbranch => menghapus branch yang ada di remote repo
+22. git clone urlremoterepo => mendownload project di remote repo ke local, dan secara otomatis menjadi git project dan terhubung remote repo origin dari yang kita clone
+23. git branch -a => melihat branch di local dan remote
+24. git fetch => untuk mendapatkan perubahan terakhir dari remote repo
+25. git pull => mengambil perubahan di remote repo dan di simpan di local, dengan pull kita melakukan fetch secara otomatis terlebih dahulu
+26. pull request => meminta request merge ke branch yang dituju di remote repo
+27. merge conflict => kondisi dimana kedua branch yang ingin di merge, ada kesamaan baris yang di ubah/berbeda, maka kita wajib memilih baris mana yang akan di gunakan
+28. fork => melakukan duplikasi ke tempat kita, biasanya digunakan ketika ingin berkontribusi kepada project open source, dimana kita tidak punya akses langsung ke git repo nya, Semua perubahan nanti dilakukan di git repository profile kita Dan setelah selesai, kita bisa melakukan pull request ke repository sumber forking kita
